@@ -58,7 +58,7 @@ If running locally, update paths inside the notebooks to match your dataset loca
 
 ## Getting Started
 
-### Option A: Run in Google Colab (Recommended)
+### Have run code in Google Colab
 1. Upload notebooks to Colab or open them from GitHub.
 2. Mount Google Drive:
 ```python
@@ -75,21 +75,18 @@ drive.mount('/content/drive')
 
 ## Output Example
 
-Final Prediction: Goddess (Valid, 98.33%)
+**Final Prediction: Goddess (Valid, 98.33%)**
 
-Meaning:
-
-- Pose predicted: Goddess
-
-- Validation: Valid (matches target pose)
-
-- Confidence: 98.33%
+**Meaning:**
+- **Pose predicted:** Goddess  
+- **Validation:** Valid (matches target pose)  
+- **Confidence:** 98.33%  
 
 ---
 
 ## Patent / Publication
-Indian Patent Application No.: 202541122968 — Published in Indian Patent Journal (U/S 11A).
 
+**Indian Patent Application No.: 202541122968 — Published in Indian Patent Journal (U/S 11A).**
 
 
 

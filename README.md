@@ -12,7 +12,7 @@ This project was later converted into a research paper and resulted in an **Indi
 - Pose validation (Valid/Invalid) based on target pose matching
 - Two model variants:
   - **Proposed VGG16** (image-only classifier baseline)
-  - **Proposed PoseNet + VGG16** (hybrid approach using keypoints + visual features)
+  - **Proposed PoseNet** (Proposed VGG16 fused with Proposed PoseNet - hybrid approach using keypoints + visual features)
 
 ---
 
@@ -46,3 +46,52 @@ This project was later converted into a research paper and resulted in an **Indi
 The VGG16 notebook expects a dataset organized by class.
 
 Example structure:
+
+
+In the original notebooks, the dataset path was used via Google Drive (Colab):
+- `/content/drive/My Drive/Yoga/DATASET/TRAIN`
+- `/content/drive/My Drive/Yoga/DATASET/TEST`
+
+If running locally, update paths inside the notebooks to match your dataset location.
+
+---
+
+## Getting Started
+
+### Option A: Run in Google Colab (Recommended)
+1. Upload notebooks to Colab or open them from GitHub.
+2. Mount Google Drive:
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+
+3. Ensure your dataset/model paths match your Drive structure (update paths in the notebook if needed).
+
+4. Run the notebook cells in order:
+    - Run Proposed_VGG16.ipynb for training + evaluation
+    - Run Proposed_PoseNet.ipynb for hybrid inference + validation
+
+---
+
+## Output Example
+
+Final Prediction: Goddess (Valid, 98.33%)
+
+Meaning:
+
+- Pose predicted: Goddess
+
+- Validation: Valid (matches target pose)
+
+- Confidence: 98.33%
+
+---
+
+## Patent / Publication
+Indian Patent Application No.: 202541122968 — Published in Indian Patent Journal (U/S 11A).
+
+
+
+
+
+
